@@ -1,0 +1,13 @@
+{
+    "manifest_version": 2,
+    "name": "RTandFav+MyStyle",
+    "version": "1.0",
+    "description": "Twitterの体裁を整え, いいね・リツイートをワンクリックで同時におこなえるようにした拡張機能(米大統領選に伴うリツイートの仕様変更に対応). ",
+    "content_scripts": [
+      {
+        "matches": ["https://twitter.com/*"],
+        "css":["style.css"],
+        "js": ["jquery-3.5.1.min.js", "main.js"]
+      }
+    ]
+  }
